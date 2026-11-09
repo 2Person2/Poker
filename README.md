@@ -1,2 +1,0 @@
-# Poker
-poker for lindy
