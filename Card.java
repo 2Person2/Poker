@@ -2,7 +2,7 @@
 @author Aarnav Kumta
 card class is used to create card objects that have a rank and a suit
 */
-class Card{
+public class Card{
    /**
    the rank is either A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, or K
    */
