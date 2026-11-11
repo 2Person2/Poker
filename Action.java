@@ -8,8 +8,6 @@ public final class Action {
 
   /**
   Makes an action. Only raises keep the amount.
-  @param type the move type
-  @param amount the raise total (ignored for other moves)
   @author Brandon Mai
   */
   public Action(ActionType type, int amount) {
@@ -23,7 +21,6 @@ public final class Action {
 
   /**
   Makes a fold.
-  @return an action with type FOLD
   @author Brandon Mai
   */
   public static Action fold() {
@@ -32,7 +29,6 @@ public final class Action {
 
   /**
   Makes a check.
-  @return an action with type CHECK
   @author Brandon Mai
   */
   public static Action check() {
@@ -41,7 +37,6 @@ public final class Action {
 
   /**
   Makes a call.
-  @return an action with type CALL
   @author Brandon Mai
   */
   public static Action call() {
@@ -50,7 +45,6 @@ public final class Action {
 
   /**
   Makes an all-in.
-  @return an action with type ALL_IN
   @author Brandon Mai
   */
   public static Action allIn() {
@@ -59,8 +53,6 @@ public final class Action {
 
   /**
   Makes a raise.
-  @param amount the raise total
-  @return an action with type RAISE and that total
   @author Brandon Mai
   */
   public static Action raise(int amount) {
@@ -69,7 +61,6 @@ public final class Action {
 
   /**
   Gets the move type.
-  @return the action type
   @author Brandon Mai
   */
   public ActionType getType() {
@@ -78,7 +69,6 @@ public final class Action {
 
   /**
   Gets the amount.
-  @return the raise total, or 0
   @author Brandon Mai
   */
   public int getAmount() {
@@ -87,7 +77,6 @@ public final class Action {
 
   /**
   Shows the move as text.
-  @return the move text, including the total for a raise
   @author Brandon Mai
   */
   @Override
