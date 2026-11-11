@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
 /**
 @author Aarnav Kumta
 deck object which holds all 52 cards
@@ -32,7 +35,22 @@ class Deck{
    @return a card object
    */
    public Card deal(){
+      if(cards.size() == 0){
+        return "Error, no cards left in the deck"; // for debugging purposes, won't actually happen in a game of poker
+      }
       return cards.remove(cards.size() - 1);
+   }
+
+   /**
+   restores the entire deck to its 52 cards
+   */
+   public void reset(){
+     cards.clear();
+     for(Suit suit : Suit.values()){
+         for(Rank rank : Rank.values()){
+            cards.add(new Card(rank, suit));
+         }
+      }
    }
   
    /**
