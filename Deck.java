@@ -5,7 +5,7 @@ import java.util.Collections;
 @author Aarnav Kumta
 deck object which holds all 52 cards
 */
-class Deck{
+public class Deck{
   /**
   arraylist holding all cards in the deck
   */
