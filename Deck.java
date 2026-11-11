@@ -36,7 +36,7 @@ public class Deck{
    */
    public Card deal(){
       if(cards.size() == 0){
-        return "Error, no cards left in the deck"; // for debugging purposes, won't actually happen in a game of poker
+        System.out.println("Error, no cards left in the deck"); // for debugging purposes, won't actually happen in a game of poker
       }
       return cards.remove(cards.size() - 1);
    }
